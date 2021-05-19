@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  py4at:
+    image: flc/py4at
+    container_name: py4at
+    stdin_open: true # docker run -i
+    volumes:
+      - /my/soft/trading:/root/trading:rw
